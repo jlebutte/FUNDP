@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="23176JulienLebutte.FUNDP" Publisher="CN=C582F90C-9ADA-4646-84BC-8468D9345586" Version="1.0.0.1" />
+  <Properties>
+    <DisplayName>FUNDP</DisplayName>
+    <PublisherDisplayName>Julien Lebutte</PublisherDisplayName>
+    <Logo>fundp50.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="FUNDP.W8.App">
+      <VisualElements DisplayName="FUNDP" Logo="fundp150.png" SmallLogo="fundp30.png" Description="Cette application permet de visualiser les horaires des Facultés Universitaires de Namur. Sélectionnez votre session et profiter de votre horaire hebdomadaire (uniquement faculté d'informatique pour le moment)" ForegroundText="dark" BackgroundColor="#FFFFFF">
+        <DefaultTile ShowName="allLogos" WideLogo="fundp310.png" />
+        <SplashScreen Image="fundp300.png" BackgroundColor="#FFFFFF" />
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
