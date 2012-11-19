@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ServiceDefinition name="FUNDP" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2012-10.1.8">
-  <WebRole name="Horaires" vmsize="Small">
+  <WebRole name="Schedule" vmsize="Small">
     <Sites>
       <Site name="Web">
         <Bindings>
@@ -15,7 +15,7 @@
       <Import moduleName="Diagnostics" />
     </Imports>
     <LocalResources>
-      <LocalStorage name="Horaires.svclog" sizeInMB="1000" cleanOnRoleRecycle="false" />
+      <LocalStorage name="Schedule.svclog" sizeInMB="1000" cleanOnRoleRecycle="false" />
     </LocalResources>
   </WebRole>
   <WebRole name="WebCampus" vmsize="Small">

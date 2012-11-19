@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Horaires.Assets {
+namespace Schedule.Assets {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Horaires.Assets {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Horaires.Assets.Global", typeof(Global).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Schedule.Assets.Global", typeof(Global).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

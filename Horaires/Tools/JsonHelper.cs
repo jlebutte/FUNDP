@@ -3,7 +3,7 @@ using System.IO;
 using System.Runtime.Serialization.Json;
 using System.Text;
 
-namespace Horaires.Tools
+namespace Schedule.Tools
 {
     public static class JsonHelper
     {

@@ -41,12 +41,12 @@
     <ServiceConfiguration Include="ServiceConfiguration.Cloud.cscfg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Horaires\Horaires.csproj">
-      <Name>Horaires</Name>
+    <ProjectReference Include="..\Horaires\Schedule.csproj">
+      <Name>Schedule</Name>
       <Project>{daa87f15-5f8f-4800-a0bb-7a0fb190a255}</Project>
       <Private>True</Private>
       <RoleType>Web</RoleType>
-      <RoleName>Horaires</RoleName>
+      <RoleName>Schedule</RoleName>
       <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
     </ProjectReference>
     <ProjectReference Include="..\WebCampus\WebCampus.csproj">

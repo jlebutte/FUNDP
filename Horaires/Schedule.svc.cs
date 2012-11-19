@@ -1,5 +1,4 @@
 ﻿using System.Globalization;
-using Horaires.Models;
 using HtmlAgilityPack;
 using System;
 using System.Collections.Generic;
@@ -9,12 +8,11 @@ using System.Net;
 using System.ServiceModel.Web;
 using System.Text;
 using System.Text.RegularExpressions;
+using Schedule.Models;
 
-namespace Horaires
+namespace Schedule
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
-    // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
-    public class Service1 : IService1
+    public class Schedule : ISchedule
     {
         private readonly CookieContainer _cookies = new CookieContainer();
 
@@ -50,7 +48,7 @@ namespace Horaires
             }
         }
 
-        public List<Cours> GetCours(int section, string date)
+        public List<Cours> GetClassesWeek(int section, string date)
         {
             try
             {
@@ -102,7 +100,24 @@ namespace Horaires
             }
         }
 
-        public List<Section> GetSection()
+        public List<Cours> GetClassesDay(int section, string date)
+        {
+            try
+            {
+                DateTime dateRequest = DateTime.Now;
+                if (!string.IsNullOrWhiteSpace(date))
+                {
+                    dateRequest = DateTime.Parse(date);
+                }
+                return GetClassesWeek(section, date).Where(c => c.DayDT.ToShortDateString() == dateRequest.ToShortDateString()).ToList();
+            }
+            catch (Exception)
+            {
+                throw new Exception();
+            }
+        }
+
+        public List<Section> GetSections()
         {
             List<Section> list = new List<Section>();
             

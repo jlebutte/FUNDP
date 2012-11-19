@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Globalization;
 
-namespace Horaires.Models
+namespace Schedule.Models
 {
     public class Cours
     {
@@ -18,6 +18,7 @@ namespace Horaires.Models
         };
 
         private DateTime _start;
+        public DateTime DayDT { get { return _start; } }
 
         public string Name { get; set; }
         public string Day { get; set; }
@@ -30,7 +31,7 @@ namespace Horaires.Models
                 _start = DateTime.Parse(value).AddDays(_week.IndexOf(Day));
             } 
         }
-        public string End { get { return _start.AddHours(2).ToString(CultureInfo.InvariantCulture); } }
+
         public string Prof { get; set; }
     }
 }

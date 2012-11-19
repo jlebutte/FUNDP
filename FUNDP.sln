@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "FUNDP", "FUNDP\FUNDP.ccproj", "{02936B47-3BD0-406E-AD3E-CA9D881C982D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Horaires", "Horaires\Horaires.csproj", "{DAA87F15-5F8F-4800-A0BB-7A0FB190A255}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schedule", "Horaires\Schedule.csproj", "{DAA87F15-5F8F-4800-A0BB-7A0FB190A255}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCampus", "WebCampus\WebCampus.csproj", "{9D81DC6C-B021-482A-9659-7A7BAA54AF1D}"
 EndProject
@@ -18,15 +18,15 @@ Global
 		SccProjectUniqueName1 = FUNDP\\FUNDP.ccproj
 		SccProjectName1 = FUNDP
 		SccLocalPath1 = FUNDP
-		SccProjectUniqueName2 = Horaires\\Horaires.csproj
-		SccProjectName2 = Horaires
-		SccLocalPath2 = Horaires
-		SccProjectUniqueName3 = WebCampus\\WebCampus.csproj
-		SccProjectName3 = WebCampus
-		SccLocalPath3 = WebCampus
-		SccProjectUniqueName4 = FUNDP.W8\\FUNDP.W8.csproj
-		SccProjectName4 = FUNDP.W8
-		SccLocalPath4 = FUNDP.W8
+		SccProjectUniqueName2 = WebCampus\\WebCampus.csproj
+		SccProjectName2 = WebCampus
+		SccLocalPath2 = WebCampus
+		SccProjectUniqueName3 = FUNDP.W8\\FUNDP.W8.csproj
+		SccProjectName3 = FUNDP.W8
+		SccLocalPath3 = FUNDP.W8
+		SccProjectUniqueName4 = Horaires\\Schedule.csproj
+		SccProjectName4 = Horaires
+		SccLocalPath4 = Horaires
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
